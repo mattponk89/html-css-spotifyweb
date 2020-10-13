@@ -6,12 +6,92 @@
   box-sizing: border-box;
 }
 
-
+body{
+  color:white;
+}
+/* sezione sidebar */
 #box-sidebar{
   width: 250px;
   height: 90vh;
   background-color: #000000;
+  position: relative;
 }
+#box-sidebar .logo-sidebar{
+  padding: 20px 80px 20px 20px;
+}
+
+#box-sidebar .box-menu-sidebar{
+  margin: 10px 0;
+}
+#box-sidebar .menu-button{
+  display: block;
+  width: 100%;
+  line-height: 35px;
+  color: #6e6e6e;
+  text-decoration: none;
+  padding-left: 20px;
+}
+#box-sidebar .menu-button:hover{
+  color: white;
+}
+#box-sidebar .menu-button:hover .plus-playlist{
+  background-color: white;
+}
+#box-sidebar .box-menu-sidebar .button-active{
+  color: white;
+  border-left: 3px solid #adff2f;
+}
+#box-sidebar .box-playlist-sidebar .plus-playlist{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-color: #6e6e6e;
+  color: black;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 10px;
+}
+#box-sidebar .box-playlist-sidebar h4{
+  padding-left: 20px;
+  line-height: 35px;
+}
+#box-sidebar .box-bottom-sidebar{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+}
+#box-sidebar .box-bottom-sidebar i{
+  margin-right: 10px;
+}
+/* #box-sidebar .box-bottom-sidebar .menu-button-bottom{
+  width: 250px;
+} */
+#box-sidebar .box-bottom-sidebar .row-art{
+  background-color: #6e6e6e;
+  height: 1px;
+  width: 210px;
+  margin: 0 20px;
+}
+#box-sidebar .box-bottom-sidebar .user-sidebar{
+  color:white;
+}
+#box-sidebar .box-bottom-sidebar .user-sidebar .user-icon{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #6e6e6e;
+  overflow: hidden;
+  margin-right: 10px;
+}
+#box-sidebar .box-bottom-sidebar .user-sidebar .user-icon img{
+  width: 100%;
+}
+/* fine sezione sidebar */
+
+
 #box-main-content{
   position: absolute;
   top:0;
@@ -28,6 +108,6 @@
 
 /* classi debug */
 
-.debug .view-box{
+/* .debug .view-box{
   border: 1px solid black;
-}
+} */
