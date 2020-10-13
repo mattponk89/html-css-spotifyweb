@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify by MattPonk</title>
@@ -14,9 +15,9 @@
           <img src="img/logo.svg" alt="Logo Spotify">
         </div>
         <div class="box-menu-sidebar">
-          <a href="#" class="menu-button button-active">Home</a>
-          <a href="#" class="menu-button">Cerca</a>
-          <a href="#" class="menu-button">La tua libreria</a>
+          <a href="#" class="menu-button button-active"><img src="img/home.svg" alt="icon-home">Home</a>
+          <a href="#" class="menu-button"><img src="img/search.svg" alt="icon-search">Cerca</a>
+          <a href="#" class="menu-button"><img src="img/libreria.svg" alt="icon-library">La tua libreria</a>
         </div>
         <div class="box-playlist-sidebar">
           <h4>PLAYLIST</h4>
@@ -39,7 +40,19 @@
       </div><!-- fine sidebar laterale -->
 
       <div id="box-main-content" class="view-box"><!-- main content -->
-
+        <div class="bar-upgrade">
+          <a class="button-upgrade" href="#">EFFETTUA L'UPGRADE</a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li><a class="button-main-menu main-menu-active" href="#">IN EVIDENZA</a><div class="row-active-main-menu"></div></li>
+            <li><a class="button-main-menu" href="#">PODCAST</a></li>
+            <li><a class="button-main-menu" href="#">CLASSIFICHE</a></li>
+            <li><a class="button-main-menu" href="#">GENERI E MOOD</a></li>
+            <li><a class="button-main-menu" href="#">NUOVE USCITE</a></li>
+            <li><a class="button-main-menu" href="#">SCOPRI</a></li>
+          </ul>
+        </div>
       </div> <!-- fine content -->
 
       <div id="box-player-bottom" class="view-box"><!-- player musicale bottom -->
