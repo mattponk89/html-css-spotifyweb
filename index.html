@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify by MattPonk</title>
   </head>
@@ -11,7 +12,7 @@
     <main>
 
       <div id="box-sidebar"><!-- sidebar laterale -->
-        <div class="box-top-sidebar">
+        <div class="box-top-sidebar layout-lg">
           <div class="logo-sidebar">
             <img src="img/logo.svg" alt="Logo Spotify">
           </div>
@@ -32,12 +33,23 @@
             <a href="#" class="menu-button">Nome Playlist</a>
           </div>
         </div>
-        <div class="box-bottom-sidebar">
+        <div class="box-bottom-sidebar layout-lg">
             <a href="#" class="menu-button menu-button-bottom"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Installa app</a>
             <div class="row-art">
             </div>
             <a href="#" class="menu-button menu-button-bottom user-sidebar">
               <div class="user-icon"><img src="img/profile.svg" alt="icon-user"></div>John Doe</a>
+        </div>
+        <div class="box-top-sidebar-xs layout-xs">
+          <img class="logo-small"src="img\logo-small.svg" alt="logo small">
+          <a href="#"><img src="img/home.svg" alt="icon-home"></a>
+          <a href="#"><img src="img/search.svg" alt="icon-search"></a>
+          <a href="#"><img src="img/libreria.svg" alt="icon-library"></a>
+        </div>
+        <div class="box-bottom-sidebar-xs layout-xs">
+            <a href="#"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+            <a href="#" class="user-sidebar">
+              <div class="user-icon-xs"><img src="img/profile.svg" alt="icon-user"></div></a>
         </div>
       </div><!-- fine sidebar laterale -->
 
@@ -142,7 +154,41 @@
       </div> <!-- fine content -->
 
       <div id="box-player-bottom"><!-- player musicale bottom -->
-
+        <div class="actual-album">
+          <div class="box-img-media">
+            <div class="title-album-media">
+              <img src="img/sinister.jpeg" alt="album photo">
+              <div class="title-media">
+                <h5 class="album-title">Sinister</h5>
+                <h6>Brano Nome</h6>
+              </div>
+            </div>
+            <div class="icon-title">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-folder-o" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="media-player">
+          <div class="nav-media-player">
+            <a class="fa fa-random" aria-hidden="true"></a>
+            <a class="fa fa-step-backward" aria-hidden="true"></a>
+            <a class="fa fa-play-circle-o play-button" aria-hidden="true"></a>
+            <a class="fa fa-step-forward" aria-hidden="true"></a>
+            <a class="fa fa-repeat" aria-hidden="true"></a>
+          </div>
+          <div class="time-song">
+            <span class="actual-time">0:26</span>
+            <input type="range" name="range-song" value="">
+            <span class="total-time">4:25</span>
+          </div>
+        </div>
+        <div class="volume-media">
+          <i class="fa fa-list" aria-hidden="true"></i>
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+          <input type="range" name="range-volume" value="">
+        </div>
       </div><!-- fine player musicale bottom -->
     </main>
   </body>
