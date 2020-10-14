@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify by MattPonk</title>
   </head>
-  <body class="debug">
+  <body>
     <main>
 
-      <div id="box-sidebar" class="view-box"><!-- sidebar laterale -->
-        <div class="logo-sidebar">
-          <img src="img/logo.svg" alt="Logo Spotify">
-        </div>
-        <div class="box-menu-sidebar">
-          <a href="#" class="menu-button button-active"><img src="img/home.svg" alt="icon-home">Home</a>
-          <a href="#" class="menu-button"><img src="img/search.svg" alt="icon-search">Cerca</a>
-          <a href="#" class="menu-button"><img src="img/libreria.svg" alt="icon-library">La tua libreria</a>
-        </div>
-        <div class="box-playlist-sidebar">
-          <h4>PLAYLIST</h4>
-          <a href="#" class="menu-button"><div class="plus-playlist"><i class="fa fa-plus" aria-hidden="true"></i></div>Crea Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
-          <a href="#" class="menu-button">Nome Playlist</a>
+      <div id="box-sidebar"><!-- sidebar laterale -->
+        <div class="box-top-sidebar">
+          <div class="logo-sidebar">
+            <img src="img/logo.svg" alt="Logo Spotify">
+          </div>
+          <div class="box-menu-sidebar">
+            <a href="#" class="menu-button button-active"><img src="img/home.svg" alt="icon-home">Home</a>
+            <a href="#" class="menu-button"><img src="img/search.svg" alt="icon-search">Cerca</a>
+            <a href="#" class="menu-button"><img src="img/libreria.svg" alt="icon-library">La tua libreria</a>
+          </div>
+          <div class="box-playlist-sidebar">
+            <h4>PLAYLIST</h4>
+            <a href="#" class="menu-button"><div class="plus-playlist"><i class="fa fa-plus" aria-hidden="true"></i></div>Crea Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+          </div>
         </div>
         <div class="box-bottom-sidebar">
             <a href="#" class="menu-button menu-button-bottom"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Installa app</a>
@@ -39,7 +41,7 @@
         </div>
       </div><!-- fine sidebar laterale -->
 
-      <div id="box-main-content" class="view-box"><!-- main content -->
+      <div id="box-main-content"><!-- main content -->
         <div class="bar-upgrade">
           <a class="button-upgrade" href="#">EFFETTUA L'UPGRADE</a>
         </div>
@@ -53,9 +55,93 @@
             <li><a class="button-main-menu" href="#">SCOPRI</a></li>
           </ul>
         </div>
+        <div class="catalog-album">
+          <h2 class="catalog-title">Recently Played</h2>
+          <div class="catalog-list">
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/metal_lifting.jpg" alt="album photo">
+              </div>
+              <h5 class="album-title">Heavy Metal</h5>
+              <h6 class="album-artist">Subtitle</h6>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/stranger.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h5>
+              <h6 class="album-artist">Kyle Dixon & Michael Stein</h6>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/aquietplace.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">A quiet place</h5>
+              <h6 class="album-artist">Subtitle</h6>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/split.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Split</h5>
+              <h6 class="album-artist">Subtitle</h6>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/cure.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">A cure for wellness</h5>
+              <h6 class="album-artist">Subtitle</h6>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/sinister.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Sinister</h5>
+              <h6 class="album-artist">Subtitle</h6>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-album">
+          <h2 class="catalog-title">Created per John Doe</h2>
+          <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+          <div class="catalog-list">
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/radar.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Release Radar</h5>
+            </div>
+            <div class="box-album">
+              <div class="album-photo">
+                <img src="img/mixdaily.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Daily Mix 1</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-album">
+          <h2 class="catalog-title">Artisti più popolari</h2>
+          <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+          <div class="catalog-list">
+            <div class="box-album">
+              <div class="album-photo album-artist">
+                <img src="img/youg.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Youg</h5>
+            </div>
+            <div class="box-album">
+              <div class="album-photo album-artist">
+                <img src="img/einaudi.jpeg" alt="album photo">
+              </div>
+              <h5 class="album-title">Einaudi</h5>
+            </div>
+          </div>
+        </div>
       </div> <!-- fine content -->
 
-      <div id="box-player-bottom" class="view-box"><!-- player musicale bottom -->
+      <div id="box-player-bottom"><!-- player musicale bottom -->
 
       </div><!-- fine player musicale bottom -->
     </main>
