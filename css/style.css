@@ -27,6 +27,7 @@ main {
 }
 #box-sidebar .box-top-sidebar{
   min-height: 400px;
+  height: calc(100% - 71px);
 }
 #box-sidebar .logo-sidebar{
   padding: 20px 80px 20px 20px;
@@ -63,8 +64,10 @@ main {
 }
 #box-sidebar .box-playlist-sidebar{
   min-height: 300px;
+  height: 315px;
   overflow-y: auto;
 }
+
 #box-sidebar .box-playlist-sidebar .plus-playlist{
   display: inline-block;
   height: 35px;
@@ -118,16 +121,17 @@ main {
   top:0;
   right:0;
   width: calc(100% - 250px);
-  height: calc(100vh - 80px);
+  height: calc(100vh - 160px);
   background-color: #141922;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 15px;
+  margin-top: 80px;
 }
 
 /* barra in alto dell'upgrade */
 
-#box-main-content .bar-upgrade{
+.bar-upgrade{
   width: calc(100% - 250px);
   height: 80px;
   background-color: #080b12;
@@ -139,7 +143,7 @@ main {
   right: 0;
 }
 
-#box-main-content .bar-upgrade .button-upgrade{
+.bar-upgrade .button-upgrade{
   text-decoration: none;
   color: white;
   border: 1px solid white;
@@ -150,7 +154,7 @@ main {
   margin-right: 40px;
 }
 
-#box-main-content .bar-upgrade .button-upgrade:hover{
+.bar-upgrade .button-upgrade:hover{
   animation: enlarge 0.4s linear;
   animation-fill-mode: forwards;
 }
@@ -167,7 +171,6 @@ main {
 
 /* MENU CENTRALE */
 #box-main-content .main-menu{
-  margin-top: 80px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -286,6 +289,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 #box-player-bottom .actual-album {
   max-width: 250px;
@@ -347,7 +351,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
