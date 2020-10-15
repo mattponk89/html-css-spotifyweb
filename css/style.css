@@ -63,7 +63,7 @@ main {
 }
 #box-sidebar .box-playlist-sidebar{
   min-height: 300px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 #box-sidebar .box-playlist-sidebar .plus-playlist{
   display: inline-block;
@@ -80,9 +80,6 @@ main {
   line-height: 35px;
 }
 #box-sidebar .box-bottom-sidebar{
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
   width: 100%;
   background-color: #000000;
 }
@@ -150,7 +147,21 @@ main {
   vertical-align: middle;
   height: 40px;
   padding: 10px 40px;
-  margin-right: 10px;
+  margin-right: 40px;
+}
+
+#box-main-content .bar-upgrade .button-upgrade:hover{
+  animation: enlarge 0.4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
 }
 /* fine barra in alto dell'upgrade */
 
@@ -178,6 +189,9 @@ main {
   width: 2em;
   margin: auto;
 }
+#box-main-content .main-menu li .button-main-menu:hover{
+  color: white;
+}
 /* FINE MENU CENTRALE */
 
 /* INIZIO CATALOGO */
@@ -198,6 +212,39 @@ main {
   text-align: center;
 }
 
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo img {
+    opacity: 0.5
+}
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a {
+    opacity: 1;
+    top: 0;
+    z-index: 500;
+}
+#box-main-content .catalog-album .catalog-list .box-album .album-photo a span{
+  display: none;
+}
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a span {
+    display: inline-block;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.profile-img-container a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
+}
+
 #box-main-content .catalog-album .catalog-list .box-album .album-title{
   margin: 5px 0;
 }
@@ -214,6 +261,7 @@ main {
 
 #box-main-content .catalog-album .catalog-list .box-album .album-photo{
   width: 100%;
+  position: relative;
 }
 
 #box-main-content .catalog-album .catalog-list .box-album .album-photo img{
