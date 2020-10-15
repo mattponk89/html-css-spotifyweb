@@ -212,38 +212,6 @@ main {
   text-align: center;
 }
 
-#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo img {
-    opacity: 0.5
-}
-#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a {
-    opacity: 1;
-    top: 0;
-    z-index: 500;
-}
-#box-main-content .catalog-album .catalog-list .box-album .album-photo a span{
-  display: none;
-}
-#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a span {
-    display: inline-block;
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    color: white;
-}
-
-.profile-img-container a {
-    display: block;
-    position: absolute;
-    top: -100%;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    color: inherit;
-}
 
 #box-main-content .catalog-album .catalog-list .box-album .album-title{
   margin: 5px 0;
@@ -272,6 +240,42 @@ main {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* hover per il visualizzare il play degli album */
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo img {
+  opacity: 0.5
+}
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a {
+  opacity: 1;
+  top: 0;
+  z-index: 500;
+}
+#box-main-content .catalog-album .catalog-list .box-album .album-photo a span{
+  display: none;
+}
+#box-main-content .catalog-album .catalog-list .box-album:hover .album-photo a span {
+  display: inline-block;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  color: white;
+}
+.profile-img-container a {
+  display: block;
+  position: absolute;
+  top: -100%;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: inherit;
+}
+/* fine hover per il visualizzare il play degli album */
+
+
 /* fine sezione main windows */
 
 /* sezione player bottom */
@@ -286,13 +290,15 @@ main {
 #box-player-bottom .actual-album {
   max-width: 250px;
   width: 250px;
+  min-width: 150px;
 }
 #box-player-bottom .box-img-media{
   margin-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right:1em
+  padding-right:1em;
+  flex-shrink: 0;
 }
 
 #box-player-bottom .box-img-media .title-album-media .title-media{
@@ -304,22 +310,31 @@ main {
   height: 30px;
 }
 #box-player-bottom .media-player{
-  width: 60%;
-  min-width: 30%;
+  width: 40%;
+  min-width: 300px;
   text-align: center;
   font-size: 0.67em;
 }
-#box-player-bottom .media-player .nav-media-player a{
+.pointer:hover{
+  cursor: pointer;
+}
+
+#box-player-bottom .media-player .nav-media-player a:not(.play-button){
   height: 20px;
   width: 20px;
-  margin: 0 5px;
+  font-size: 1.5em;
 }
 #box-player-bottom .media-player .nav-media-player .play-button{
-  font-size: 2em;
+  font-size: 3em;
+  height: 30px;
+  width: 30px;
 }
 #box-player-bottom .media-player .nav-media-player{
-  text-align: center;
-  vertical-align: middle;
+  width: 250px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #box-player-bottom .media-player input{
   width: calc(100% - 50px);
@@ -327,14 +342,23 @@ main {
 }
 #box-player-bottom .media-player .time-song{
   text-align: center;
-  width: 40%:
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
 
 #box-player-bottom .volume-media {
   width:200px;
+  min-width: 140px;
   text-align: right;
+}
+#box-player-bottom .volume-media a{
+  margin: 0 5px;
 }
 #box-player-bottom .volume-media input{
   width: 50%;
@@ -348,7 +372,7 @@ main {
     width: calc(100% / 4);
   }
   #box-player-bottom .media-player{
-    width: 50vw;
+    width: 50%;
   }
   #box-player-bottom .actual-album {
     width: 200px);
@@ -412,8 +436,6 @@ main {
     overflow: hidden;
     margin-top: 10px;
   }
-}
-@media all and (max-width: 667px) {
   #box-player-bottom .icon-title i{
     display: block;
   }
@@ -421,5 +443,14 @@ main {
     height: 15px;
     width: 15px;
     margin: 0 3px:
+  }
+  #box-player-bottom .volume-media a{
+    margin: 0px;
+  }
+  #box-player-bottom .box-img-media{
+    padding-right: 0;
+  }
+  #box-player-bottom{
+    overflow-x: hidden;
   }
 }
