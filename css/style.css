@@ -420,7 +420,7 @@ main {
   #box-main-content{
     width: calc(100vw - 60px);
   }
-  #box-main-content .bar-upgrade{
+    .bar-upgrade{
     width: calc(100vw - 60px);
   }
   #box-sidebar .box-bottom-sidebar-xs a{
